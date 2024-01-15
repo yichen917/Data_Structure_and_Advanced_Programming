@@ -1,4 +1,4 @@
-// This assignment primarily involves writing classes and utilizing parent and child classes to make the development process more efficient.
+// Following HW 2-2, this assignment primarily involves writing classes and utilizing parent and child classes to make the development process more efficient.
 
 #include <iostream>
 #include <fstream>
