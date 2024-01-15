@@ -1,3 +1,12 @@
+/*
+This assignment primarily involves stack data structure and implementation.
+
+Question:
+Following HW4-2, now the given expression may contain variables in the operand part, rather than just integers, such as a + 5xb-3/2. 
+Please apply the stack to implement the calculation and print out the calculation process along with the result. (Note: Division should only keep the quotient.)
+According to the example mentioned, the result of the calculation would be a + 5b-1.
+*/
+
 #include <iostream>
 #include <stack>
 #include <string>
@@ -185,7 +194,7 @@ Poly Poly::operator+(Poly after){
         new_num = after_numerator*now_denominator+now_numerator*after_denominator;
         new_den = after_numerator*now_denominator;
         int start = 0;
-        if (new_num > new_den) //¥i¯à»Ý­n¬ù¤À
+        if (new_num > new_den) //å¯èƒ½éœ€è¦ç´„åˆ†
             start = new_den;
         else start = new_num;
         for(int i=start;i>1;i--)
@@ -211,7 +220,7 @@ Poly Poly::operator-(Poly after){
 }
 Poly Poly::operator*(Poly after){
     Poly newPoly;
-    if ( after.g_added()== "d"){ // ¤@°ïÅÜ¼Æ * ¼Æ¦r
+    if ( after.g_added()== "d"){ // ä¸€å †è®Šæ•¸ * æ•¸å­—
         newPoly = *this;
         int mul_num = after.g_numerator("d");
         int mul_den = after.g_denominator("d");
@@ -225,7 +234,7 @@ Poly Poly::operator*(Poly after){
                 int new_den = newPoly.g_denominator(variable);
                 int start = 0;
                 bool need = false;
-                if (new_num > new_den) //»Ý­n¬ù¤À
+                if (new_num > new_den) //éœ€è¦ç´„åˆ†
                     start = new_den;
                 else start = new_num;
                 for(int i=start;i>1;i--){
@@ -244,7 +253,7 @@ Poly Poly::operator*(Poly after){
         }//else{
             //cout << "sth wrong when multiply two Poly"<<endl;
         //}
-    }else{ // ¼Æ¦r*ÅÜ¼Æ
+    }else{ // æ•¸å­—*è®Šæ•¸
         newPoly = after;
         string variable = after.g_added();
         int mul_num = this->g_numerator("d");
@@ -259,7 +268,7 @@ Poly Poly::operator*(Poly after){
 Poly Poly::operator/(Poly after){
     Poly newPoly = *this;
     int division = after.g_numerator("d");
-//ÅÜ¼Æ/¼Æ¦r
+//è®Šæ•¸/æ•¸å­—
     string this_var = this->g_added();
     for(int i=0;i<this_var.length();i++){
         string cur_var = this_var.substr(i,1);
@@ -271,7 +280,7 @@ Poly Poly::operator/(Poly after){
             int new_den = newPoly.g_denominator(cur_var);
             int start = 0;
             bool need = false;
-            if (new_num > new_den) //»Ý­n¬ù¤À
+            if (new_num > new_den) //éœ€è¦ç´„åˆ†
                 start = new_den;
             else start = new_num;
             for(int i=start;i>1;i--){
