@@ -1,3 +1,5 @@
+// This assignment primarily involves Priority Queue.
+
 #include <iostream>
 #include <string>
 #include <queue>
@@ -134,7 +136,7 @@ int process_to(const int next_time, int quantum[], bool add){
     static int unfinished;
     int process_time, to_do,i=0;
     bool end = false, pause;
-    // pause = true -> ¤£¥Îpop ¥u°µ¨ì¤@¥b
+    // pause = true -> ä¸ç”¨pop åªåšåˆ°ä¸€åŠ
     if (current_time < next_time){
         while(i<queue_num){
            // cout << "------------------- i=" << i << "---------------\n";
@@ -194,7 +196,7 @@ int process_to(const int next_time, int quantum[], bool add){
                         all_process[k].reducing_time(process_time);
                 }
                 //cout << first.get_name() << " has been reduced " << process_time <<endl;
-                if ( !pause ){ // °µ§¹¤@¦^
+                if ( !pause ){ // åšå®Œä¸€å›
                     if ( first.get_process_time() !=0 ){
                         if ( i < queue_num-2){
                             q[i+1].push( first);
