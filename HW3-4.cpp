@@ -1,3 +1,5 @@
+// Following HW 2-2, in this assignment, update the rules for scheduling the jobs while implementing same algorithms.
+
 #include <iostream>
 #include <fstream>
 #include <string>
