@@ -1,3 +1,12 @@
+/*This assignment primarily involves Prefix Tree structure.
+
+Question:
+A prefix tree is a tree-like data structure that is used to store a dynamic set or associative array where the keys are usually strings. 
+In this context, it's used to efficiently store and retrieve words based on their prefixes.
+
+Given multiple words and some prefixes, you need to construct a prefix tree using these words and then find words in the tree that contain the given prefixes.
+*/
+
 #include <iostream>
 #include <string>
 #include <vector>
