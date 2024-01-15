@@ -1,3 +1,9 @@
+/*
+This assignment primarily involves augmenting path algorithm implementation - BFS (breath-first search) method.
+Following HW3-2, after identifying an augmenting path, use it and modify the residual network. 
+Repeat the process until the optimal solution (maximum flow) is found.
+*/
+
 #include <iostream>
 #include <vector>
 #include <queue>
