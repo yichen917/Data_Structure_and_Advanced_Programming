@@ -1,3 +1,7 @@
+/*
+This assignment primarily involves augmenting path algorithm implementation - BFS (breath-first search) method.
+*/
+
 #include <iostream>
 #include <vector>
 #include <queue>
