@@ -1,3 +1,15 @@
+/* 
+This assignment primarily involves writing classes and utilizing parent and child classes to make the development process more efficient.
+
+Question:
+This assignment involves writing a scheduling program for the arrival and departure of ships at a port. 
+It is known that the port has two ports for navigating ships, m piers available for docking within the port, s registered ships, and n ship movement jobs in a day.
+Two scheduling algorithms are implemented:  ERT (Earliest Ready Time First) and SPT (Shortest Processing Time First).
+
+Goal: Given the info of ships and jobs, the program should calculate the total delayed time under both algorithms.
+
+*/
+
 #include <iostream>
 #include <fstream>
 #include <string>
