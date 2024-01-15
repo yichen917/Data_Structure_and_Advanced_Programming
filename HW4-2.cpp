@@ -5,6 +5,7 @@ Question:
 In this question, you will implement the concept of a stack for arithmetic calculations. 
 You will be given a mathematical expression containing addition, subtraction, multiplication, and division operations on integers, such as 3 + 5 * 2 - 3 / 2. 
 Use a stack to calculate the result. (Note: Division should only keep the quotient.)
+According to the example mentioned, the result of the calculation would be 3+10-1=12.
 */
 
 #include <iostream>
