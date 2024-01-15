@@ -1,3 +1,5 @@
+// This assignment involves Queue data structure and implementation. 
+
 #include <iostream>
 #include <string>
 #include <queue>
@@ -109,7 +111,7 @@ int process_to(const int next_time, int quantum[], bool add){
     static int unfinished;
     int process_time, to_do,i=0;
     bool end = false, pause;
-    // pause = true -> ¤£¥Îpop ¥u°µ¨ì¤@¥b
+    // pause = true -> ä¸ç”¨pop åªåšåˆ°ä¸€åŠ
     if (current_time < next_time){
         while(i<queue_num){
             while ( !q[i].empty()){
@@ -142,14 +144,14 @@ int process_to(const int next_time, int quantum[], bool add){
                         all_process[k].reducing_time(process_time);
                 }
                 //cout << "****" << q[i].front().get_name() << "has been reduced " << process_time <<endl;
-                if ( !pause ){ // °µ§¹¤@¦^
+                if ( !pause ){ // åšå®Œä¸€å›
                     if ( q[i].front().get_process_time() !=0 ){
                         q[i+1].push( q[i].front());
                         //cout << q[i].front().get_name() << "is pushed into queue " << i+1<< endl;
                     }
                     //cout << q[i].front().get_name() << "has been popped" << endl;
                     q[i].pop();
-                }else{ //³Q¥´Â_¤F
+                }else{ //è¢«æ‰“æ–·äº†
                     if (add && i!=0){
                         q[i].push(q[i].front());
                         //cout << q[i].front().get_name() << "is pushed into queue " << i<< endl;
