@@ -1,3 +1,10 @@
+/*
+This assignment primarily involves stack data structure and DFS (Depth-First Search) implementation.
+
+Question:
+On the given directed graph, please implement Depth-First Search (DFS) following the DFS search rules to determine if there is a path from node 1 to node n.
+*/
+
 #include <iostream>
 #include <string>
 #include <stack>
