@@ -1,3 +1,12 @@
+/*
+This assignment primarily involves stack data structure and implementation.
+
+Question:
+In this question, you will implement the concept of a stack for arithmetic calculations. 
+You will be given a mathematical expression containing addition, subtraction, multiplication, and division operations on integers, such as 3 + 5 * 2 - 3 / 2. 
+Use a stack to calculate the result. (Note: Division should only keep the quotient.)
+*/
+
 #include <iostream>
 #include <stack>
 using namespace std;
