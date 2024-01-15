@@ -1,3 +1,18 @@
+/*
+This assignment primarily involves ADT list and stack implementation.
+
+Question:
+Use an Abstract Data Type (ADT) List, and being limited to the following four given methods for access, to replace the common array or linked list to implement a stack. 
+In this case, a list will be used as one of the stack's data members instead of an array or linked list.
+Before addressing the stack, implement the getEntry(position) method of the list first.
+
+• insert(newPosition, newEntry)
+• remove(position)
+• getLength()
+• getLastEntry(): 
+
+*/
+
 #include<iostream>
 #include<string>
 #include<vector>
