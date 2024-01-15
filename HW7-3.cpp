@@ -1,3 +1,10 @@
+/*This assignment primarily involves Tree structure.
+
+Question:
+Given an undirected graph presented in adjencency matrix, the graph is a tree if there is exactly one path between any two nodes. 
+Based on the input undirected graph, determine if it is a tree. If it is a tree, print out the possible minimum height of this tree.
+*/
+
 #include <iostream>
 #include <string>
 #include <vector>
