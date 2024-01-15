@@ -1,3 +1,20 @@
+/*
+This assignment involves Queue data structure and implementation. 
+
+Question:
+Consider a service counter with a queue in front. When a customer arrives, if the counter is not in use, the customer goes directly to the counter for service. 
+Otherwise, the customer will wait in the queue until the counter is available.
+In this scenario, if the arrival time of customers follows an exponential distribution (with parameter λ), and the service time for each customer also follows an exponential distribution (with parameter μ), 
+the lengths of these time intervals are determined by probabilities.
+
+According to the probability model, the average waiting time for each customer in the queue () and the average number of customers waiting in the queue per unit time () can be calculated. 
+
+In this question, test data will be provided in the form of multiple customer arrival times and service times, generated based on two given exponential distribution parameters.
+
+Your task is to use a queue to simulate the queuing and waiting situation for each customer. Compare the simulation results with the calculated results from the probability model and output the percentage error.
+
+*/
+
 #include <iostream>
 #include <queue>
 #include <string>
